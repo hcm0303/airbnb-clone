@@ -131,3 +131,8 @@ STATIC_URL = "/static/"
 
 # https://docs.djangoproject.com/en/2.2/topics/auth/customizing/#extending-the-existing-user-model
 AUTH_USER_MODEL = "users.User"
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
+
+MEDIA_URL = "/media/"
