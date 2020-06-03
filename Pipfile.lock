@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "82c740efd00e37c95dc3c4e21311b92999869eaeeea3fc09b39a1152b651366f"
+            "sha256": "e4b16a7823af37a7198bfdc3e666d6ecd454bc71cb82eac769e000096838edb3"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -61,6 +61,20 @@
             "index": "pypi",
             "version": "==6.1.2"
         },
+        "django-seed": {
+            "hashes": [
+                "sha256:5cdda71dcd51b2e7340e4aec9035d99d7014409a4b11adddbdff17d814968221"
+            ],
+            "index": "pypi",
+            "version": "==0.2.2"
+        },
+        "faker": {
+            "hashes": [
+                "sha256:103c46b9701a151299c5bffe6fefcd4fb5fb04c3b5d06bee4952d36255d44ea2",
+                "sha256:34ae397aef03a0a17910452f1e8430d57fa59e2d67b20e9b637218e8f7dd22b3"
+            ],
+            "version": "==4.1.0"
+        },
         "pathspec": {
             "hashes": [
                 "sha256:7d91249d21749788d07a2d0f94147accd8f845507400749ea19c1ec9054a12b0",
@@ -96,6 +110,13 @@
             "index": "pypi",
             "version": "==7.1.2"
         },
+        "python-dateutil": {
+            "hashes": [
+                "sha256:73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c",
+                "sha256:75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"
+            ],
+            "version": "==2.8.1"
+        },
         "pytz": {
             "hashes": [
                 "sha256:a494d53b6d39c3c6e44c3bec237336e14305e4f29bbf800b599253057fbb79ed",
@@ -129,12 +150,26 @@
             ],
             "version": "==2020.5.14"
         },
+        "six": {
+            "hashes": [
+                "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259",
+                "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"
+            ],
+            "version": "==1.15.0"
+        },
         "sqlparse": {
             "hashes": [
                 "sha256:022fb9c87b524d1f7862b3037e541f68597a730a8843245c349fc93e1643dc4e",
                 "sha256:e162203737712307dfe78860cc56c8da8a852ab2ee33750e33aeadf38d12c548"
             ],
             "version": "==0.3.1"
+        },
+        "text-unidecode": {
+            "hashes": [
+                "sha256:1311f10e8b895935241623731c2ba64f4c455287888b18189350b67134a822e8",
+                "sha256:bad6603bb14d279193107714b288be206cac565dfa49aa5b105294dd5c4aab93"
+            ],
+            "version": "==1.3"
         },
         "toml": {
             "hashes": [

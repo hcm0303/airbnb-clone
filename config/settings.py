@@ -39,7 +39,7 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
 ]
 
-THIRD_PARTY_APPS = ["django_countries"]
+THIRD_PARTY_APPS = ["django_countries", "django_seed"]
 
 PRJECT_APPS = [
     "core.apps.CoreConfig",
@@ -132,7 +132,8 @@ STATIC_URL = "/static/"
 # https://docs.djangoproject.com/en/2.2/topics/auth/customizing/#extending-the-existing-user-model
 AUTH_USER_MODEL = "users.User"
 
-
+# https://docs.djangoproject.com/en/3.0/ref/settings/#media-root
 MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
 
+# https://docs.djangoproject.com/en/3.0/ref/settings/#media-url
 MEDIA_URL = "/media/"
