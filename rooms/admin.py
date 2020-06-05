@@ -98,6 +98,7 @@ class RoomAdmin(admin.ModelAdmin):
     # def save_model(self, request, obj, form, change):
     #    print(obj, form, change)
     #    return super().save_model(request, obj, form, change)
+    count_photos.short_description = "Photo Count"
 
 
 @admin.register(models.Photo)
