@@ -1,6 +1,5 @@
-from django.shortcuts import render
 from django.utils import timezone
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from . import models
 
 
@@ -21,8 +20,21 @@ class HomeView(ListView):
         return context
 
 
-def room_detail(request):
+class RoomDetail(DetailView):
 
+    model = models.Room
+    # pk_url_kwarg = 'mykey'
+
+# from django.shortcuts import render
+# from django.http import Http404
+# def room_detail(request, pk):
+#     try:
+#         room = models.Room.objects.get(pk=pk)
+#         return render(request, "rooms/detail.html", {
+#             "room": room
+#         })
+#     except models.Room.DoesNotExist:
+#         raise Http404()
 
 # from django.shortcuts import render, redirect
 # from django.core.paginator import Paginator, EmptyPage
