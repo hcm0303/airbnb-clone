@@ -24,6 +24,7 @@ SECRET_KEY = "u4j92-jitkun30_y$z0k@7cz6a)rn37&=8n@wkif8i)gcg^)ls"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# DEBUG = False
 
 ALLOWED_HOSTS = []
 # ALLOWED_HOSTS = "*"
@@ -42,7 +43,7 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = ["django_countries", "django_seed"]
 
-PRJECT_APPS = [
+PROJECT_APPS = [
     "core.apps.CoreConfig",
     "users.apps.UsersConfig",
     "rooms.apps.RoomsConfig",
@@ -52,7 +53,7 @@ PRJECT_APPS = [
     "conversations.apps.ConversationsConfig",
 ]
 
-INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PRJECT_APPS
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
