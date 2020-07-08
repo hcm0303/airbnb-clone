@@ -139,3 +139,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
 
 # https://docs.djangoproject.com/en/3.0/ref/settings/#media-url
 MEDIA_URL = "/media/"
+
+
+# Email configuration
+EMAIL_HOST = "smtp.mailgun.org"
+EMAIL_PORT = "587"
+EMAIL_HOST_USER = os.environ.get("MAILGUN_USERNAME")
+EMAIL_HOST_PASSWORD = os.environ.get("MAILGUN_PASSWORD")
+EMAIL_FROM = "airbnb@sandboxbcf8590c2cef42ef87f1543f54d52644.mailgun.org"

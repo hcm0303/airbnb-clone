@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from . import models
+
 # from rooms import models as room_models
 
 
@@ -43,6 +44,8 @@ class CustomUserAdmin(UserAdmin):
         "currency",
         "superhost",
         "is_staff",
+        "email_verified",
+        "email_secret",
     )
 
     list_filter = UserAdmin.list_filter + ("superhost",)
