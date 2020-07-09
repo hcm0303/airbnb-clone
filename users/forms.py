@@ -40,6 +40,14 @@ class LoginForm(forms.Form):
     #         pass
 
 
+# from django.contrib.auth.forms import UserCreationForm
+# class SignUpForm(UserCreationForm):
+#     email = forms.EmailField()
+#     class Meta:
+#         model = models.User
+#         fields = ("email")
+
+
 class SignUpForm(forms.ModelForm):
     class Meta:
         model = models.User
