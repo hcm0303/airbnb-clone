@@ -130,6 +130,7 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 # https://docs.djangoproject.com/en/2.2/topics/auth/customizing/#extending-the-existing-user-model
 AUTH_USER_MODEL = "users.User"
